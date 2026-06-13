@@ -636,43 +636,43 @@
 
 //   await page.close();
 
-// });
+// // });
 
 
 
 
 
-import {test} from "@playwright/test";
-import { LoginPage } from "../pages/loginpage.js";
+// import {test} from "@playwright/test";
+// import { LoginPage } from "../pages/loginpage.js";
 
-test("sign up - test", async({page})=>{
+// test("sign up - test", async({page})=>{
 
-  await page.goto("https://www.facebook.com/");
+//   await page.goto("https://www.facebook.com/");
 
-  let l = new LoginPage(page);
+//   let l = new LoginPage(page);
 
-  // let email = l.username();
+//   // let email = l.username();
   
-  // await l.enterText(email,"abc123@gmail.com");
+//   // await l.enterText(email,"abc123@gmail.com");
 
-  // let pass = l.password();
+//   // let pass = l.password();
 
-  // await l.enterText(pass, "abc123");
+//   // await l.enterText(pass, "abc123");
 
-  // let btn = l.loginbtn();
+//   // let btn = l.loginbtn();
 
-  // await l.btnClick(btn);
+//   // await l.btnClick(btn);
 
-  await l.login("abc123","abc");
+//   await l.login("abc123","abc");
 
-  await l.waitForSeconds(6);
+//   await l.waitForSeconds(6);
 
-  await l.takeScreenshot("screenshots/loginpage1.png");
+//   await l.takeScreenshot("screenshots/loginpage1.png");
 
-  await l.waitForSeconds(6);
+//   await l.waitForSeconds(6);
 
-  // await page.waitForTimeout(5000);
+//   // await page.waitForTimeout(5000);
 
-  await page.close();
+//   await page.close();
 
-});
+// });
